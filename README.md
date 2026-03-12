@@ -1,8 +1,16 @@
-# Traffic Congestion Analysis
+# Traffic Congestion Analysis Dashboard
 
-This project analyzes traffic congestion patterns across multiple cities using traffic data.
+This project analyzes traffic congestion patterns across multiple cities using traffic data.  
+An interactive dashboard was built using **Streamlit** to explore traffic indicators, congestion levels, and travel time patterns.
 
-## Objectives
+## Live Demo
+https://traffic-congestion-analysis-5hefzxlbp6mtfybjogvebr.streamlit.app/
+
+## Dataset Source
+Kaggle Dataset:  
+https://www.kaggle.com/datasets/majedalhulayel/traffic-index-in-saudi-arabia-and-middle-east
+
+## Project Objectives
 - Identify cities with the highest traffic congestion
 - Analyze traffic congestion by hour of the day
 - Explore relationships between traffic indicators
@@ -12,10 +20,14 @@ This project analyzes traffic congestion patterns across multiple cities using t
 - Python
 - Pandas
 - Matplotlib
+- Seaborn
+- Streamlit
 - Jupyter Notebook
 
-## Dataset
+## Dataset Description
+
 The dataset contains traffic indicators across multiple cities, including:
+
 - City
 - TrafficIndexLive
 - TrafficIndexWeekAgo
@@ -24,18 +36,25 @@ The dataset contains traffic indicators across multiple cities, including:
 - TravelTimeLive
 - TravelTimeHistoric
 
-## Analysis
+## Analysis Performed
+
 The analysis explores:
+
 - Traffic congestion by city
-- Traffic congestion by hour
+- Traffic congestion patterns by hour
 - Extra travel time caused by congestion
 - Relationships between traffic indicators
+- Correlation between traffic metrics
 
-##Live Demo
+## Project Files
 
+- `app.py` → Streamlit dashboard application  
+- `traffic_congestion_analysis.ipynb` → Data analysis notebook  
+- `traffic_index.csv` → Dataset used for the analysis  
+- `requirements.txt` → Python dependencies
 
-https://traffic-congestion-analysis-5hefzxlbp6mtfybjogvebr.streamlit.app/
+## How to Run Locally
 
-## Files
-- `traffic_congestion_analysis.ipynb` → Data analysis notebook
-- `traffic_data.csv` → Dataset used for the analysis
+```bash
+pip install -r requirements.txt
+streamlit run app.py
